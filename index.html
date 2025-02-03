@@ -382,9 +382,9 @@
     }
 
     // Encode the message for WhatsApp
-    const message = `الاسم: ${encodeURIComponent(name)}%0Aالمنتج: ${encodeURIComponent(product)}%0Aرقم الهاتف: ${encodeURIComponent(phone)}`;
+    const message = `مرحبًا! أريد الحجز بالمعلومات التالية:%0A- الاسم: ${encodeURIComponent(name)}%0A- المنتج: ${encodeURIComponent(product)}%0A- رقم الهاتف: ${encodeURIComponent(phone)}`;
 
-    // Build the WhatsApp URL (without additional text encoding)
+    // Build the WhatsApp URL
     const whatsappURL = `https://wa.me/201122600700?text=${message}`;
 
     // Redirect to WhatsApp
